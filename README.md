@@ -10,14 +10,14 @@ Here's my analysis for the Enron email data set and the ouputs I'm asked to gene
 
 Analysis:
 
-_Data Preprocessing_: I do some light data preprocessing by eliminating emails originating from generic email addresses ('announcements' and 'notes). I also massaged the unix timestamps to find the actual dates (they appear to be 1998 - 2002). This was confirmed as I researched the data set and found this paper:
+__Data Preprocessing__: I do some light data preprocessing by eliminating emails originating from generic email addresses ('announcements' and 'notes). I also massaged the unix timestamps to find the actual dates (they appear to be 1998 - 2002). This was confirmed as I researched the data set and found this paper:
 
 https://www.stat.berkeley.edu/~aldous/Research/Ugrad/HarishKumarReport.pdf 
 
 I could have spent multiple days conducting data pre-processing, but given the specific outputs requested, I decided this was enough. Additional data pre-processing could have included: filtering emails by subject, removing email addressses that have obvious spam email sender addresses.
 
-Question 1: This is straightforward - I count the number of emails for each sender and sort the data set in descending order.
+__Question 1__: This is straightforward - I count the number of emails for each sender and sort the data set in descending order.
 
-Question 2: We're asked to visualize the number of emails sent by the most prolific senders over time. I decided to sum the number of emails sent by the 10 most frequent senders (10 is an arbitrary number, but I feel this balances the top senders with a readable number for graphing purposes). I use monthly totals, since I believe this allows for smoothing of vacation days and sick days among the senders - plus our sums will be meaningful and not frequently close to zero (vacations weeks, etc). 
+__Question 2__: We're asked to visualize the number of emails sent by the most prolific senders over time. I decided to sum the number of emails sent by the 10 most frequent senders (10 is an arbitrary number, but I feel this balances the top senders with a readable number for graphing purposes). I use monthly totals, since I believe this allows for smoothing of vacation days and sick days among the senders - plus our sums will be meaningful and not frequently close to zero (vacations weeks, etc). 
 
-Question 3: For this question I filter the email data set by whether one of the top 10 most prolific senders was the recepient of an email from another person. We're asked to evaluate the *relative* number of *unique* incoming contacts compared to the other 10 most prolific senders. We generate this graph by changing *count()* to *nunique()* (lines 72 and 85). 
+__Question 3__: For this question I filter the email data set by whether one of the top 10 most prolific senders was the recepient of an email from another person. We're asked to evaluate the __relative__ number of __unique__ incoming contacts compared to the other 10 most prolific senders. We generate this graph by changing __count()__ to __nunique()__ (lines 72 and 85). 

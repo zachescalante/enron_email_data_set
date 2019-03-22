@@ -24,4 +24,4 @@ __Question 3__: For this question I filter the email data set by whether one of 
 
 You can run the file with the command:
 
-***python summarize-enron.py enron-event-history-all.csv***
+**python summarize-enron.py enron-event-history-all.csv**

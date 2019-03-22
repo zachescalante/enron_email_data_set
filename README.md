@@ -8,7 +8,7 @@ Here's my analysis for the Enron email data set and the ouputs I'm asked to gene
 
 3. A visualization that shows, for the same people, the number of unique people/email addresses who contacted them over the same time period. The raw number of unique incoming contacts is not quite as important as the relative numbers (compared across the individuals from (2) ) and how they change over time.
 
-Analysis:
+__Analysis__:
 
 __Data Preprocessing__: I do some light data preprocessing by eliminating emails originating from generic email addresses ('announcements' and 'notes). I also massaged the unix timestamps to find the actual dates (they appear to be 1998 - 2002). This was confirmed as I researched the data set and found this paper:
 

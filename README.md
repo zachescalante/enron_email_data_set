@@ -21,3 +21,7 @@ __Question 1__: This is straightforward - I count the number of emails for each 
 __Question 2__: We're asked to visualize the number of emails sent by the most prolific senders over time. I decided to sum the number of emails sent by the 10 most frequent senders (10 is an arbitrary number, but I feel this balances the top senders with a readable number for graphing purposes). I use monthly totals, since I believe this allows for smoothing of vacation days and sick days among the senders - plus our sums will be meaningful and not frequently close to zero (vacations weeks, etc). 
 
 __Question 3__: For this question I filter the email data set by whether one of the top 10 most prolific senders was the recepient of an email from another person. We're asked to evaluate the __relative__ number of __unique__ incoming contacts compared to the other 10 most prolific senders. We generate this graph by changing __count()__ to __nunique()__ (lines 72 and 85). 
+
+You can run the file with the command:
+
+***python summarize-enron.py enron-event-history-all.csv***

@@ -10,7 +10,7 @@ Here's my analysis for the Enron email data set and the ouputs I'm asked to gene
 
 Analysis:
 
-*Data Preprocessing*: I do some light data preprocessing by eliminating emails originating from generic email addresses ('announcements' and 'notes). I also massaged the unix timestamps to find the actual dates (they appear to be 1998 - 2002). This was confirmed as I researched the data set and found this paper:
+_Data Preprocessing_: I do some light data preprocessing by eliminating emails originating from generic email addresses ('announcements' and 'notes). I also massaged the unix timestamps to find the actual dates (they appear to be 1998 - 2002). This was confirmed as I researched the data set and found this paper:
 
 https://www.stat.berkeley.edu/~aldous/Research/Ugrad/HarishKumarReport.pdf 
 
